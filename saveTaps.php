@@ -18,7 +18,7 @@ error_log('[saveTaps] Origin received: ' . var_export($requestOrigin, true));
 if ($requestOrigin === ALLOWED_ORIGIN) {
     header('Access-Control-Allow-Origin: ' . ALLOWED_ORIGIN);
     header('Access-Control-Allow-Methods: POST, OPTIONS');
-    header('Access-Control-Allow-Headers: Content-Type, Accept');
+    header('Access-Control-Allow-Headers: Content-Type, Accept, ngrok-skip-browser-warning');
     header('Access-Control-Max-Age: 86400');
     header('Vary: Origin');
 } else {
