@@ -1,0 +1,175 @@
+body{
+	background: white;
+	font-family: 'Open sans',sans-serif;
+}
+div{
+	width:95%; 
+	/*background:white;*/
+	margin:auto;
+	padding:30px;
+	color: steelblue;
+	/*margin-top:150px;*/
+}
+#container{
+	padding: 1em;
+/*	background-color: steelblue;*/
+	width:85%;
+	display: none;
+	border: 1px solid;
+    border-color: steelblue;
+    border-radius: 6px;
+    margin:auto;
+}
+
+.buttoncontainer{
+	width:60%; 
+	background:white;
+	margin:auto;
+	padding:30px;
+	color: steelblue;
+	margin-top:150px;
+}
+
+button{
+	width:100px;
+	height: 40px;
+	text-align: center;
+	vertical-align: middle;
+	margin: 5px;
+	color: ivory;
+	font-size: 1em;
+	/*float: right;*/
+	background: steelblue;
+	border: 1px solid;
+	border-radius: 4px;
+	outline:none;
+	display:block;
+}
+
+#continue{
+	display: none;
+}
+#next{
+	float:right;
+}
+input{
+	margin: 5px;
+	width:250px;
+	border-collapse: collapse;
+	padding:5px;
+	font-size: 1em;
+	font-family: 'Ek mukta';
+}
+label{
+	margin: 5px;
+	padding:5px;
+	font-size: 1em;
+	color:#1a1a1a;
+	font-family: 'Ek mukta';
+}
+.label2{
+	margin: 5px;
+	padding:5px;
+	font-size: 1em;
+	color:#888;
+	font-family: 'Open Sans';
+}
+span{
+	color: orange;
+	font-size: 1.2em;
+	user-select:none;
+}
+.span2{
+	color: orange;
+    font-size: 1.75em;
+
+}
+.spanTime{
+	color: orange;
+    font-size: 1.25em;
+
+}
+.spanWhite{
+	color: #1a1a1a;
+    font-size: 1.25em;
+
+}
+.rightAlign{
+	position: relative;
+	float: right;
+}
+
+#counter{
+	height:30px;
+	width:100%;
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+	background: none;
+	color: #1a1a1a;
+}
+#action{
+
+	float:right; 
+	align:center;
+	position:relative;
+	/*border: solid 1px lightgrey;*/
+	background-color:steelblue;
+	color:orange;
+	height:130px;
+	width:20%;
+	margin:0px;padding:0px;
+	display:inline-block;
+	display: none;
+}
+#tapHere{
+	font-size:12px;
+	border: solid 1px lightgrey;
+	display:inline-block;
+	width:100%;color:navy; 
+	/*background-color:ivory;*/
+	height:250px;/*overflow-y:scroll;*/margin:0px;padding:0px;
+}
+
+@media screen and (min-width:768px){
+
+	div{
+		width:60%; 
+	}
+
+	.buttoncontainer{
+		width:100%;
+	}
+	button{
+		float:none;
+		display:inline-block;
+	}
+	/*#container{
+		width:60%;
+	}*/
+	#container{
+		min-width:500px;
+	}
+
+}
+@media screen and (min-width:1366px){
+
+	div{
+		width:50%; 
+	}
+
+	.buttoncontainer{
+		width:100%;
+	}
+	button{
+		float:none;
+		display:inline-block;
+	}
+	#container{
+		min-width:500px;
+	}
+	/*#container{
+		width:50%;
+	}*/
+
+}

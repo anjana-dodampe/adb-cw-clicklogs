@@ -1,0 +1,12 @@
+# Firebase service account key — NEVER commit this to version control
+firebase_key.json
+
+# NDJSON data file — raw tap logs (can be large, contains participant data)
+tap_logs.ndjson
+
+# Composer dependencies
+/vendor/
+
+# PHP environment/config files
+.env
+*.env
