@@ -196,14 +196,13 @@
 								document.getElementById("counter").innerHTML = '<span class="spanWhite">Mean tap duration: <span class="spanTime">'+Math.round(meanTouchDuration,2)+'</span> ms</span>';
 								document.getElementById("continue").style.display="block";
 								document.getElementById("tapHere").style.display="none";
-								//console.log(tapLogsArray.toString());
-								//syncToServer();
+								syncToServer(); // save this round before continuing
+								tapLogsArray = []; // reset for next round
 
 							}else{
 							
 								document.getElementById("counter").innerHTML = '<span class="spanWhite">Mean tap duration: <span class="spanTime">'+Math.round(meanTouchDuration,2)+'</span> ms</span>';
 								document.getElementById("tapHere").style.display="none";
-								//console.log(tapLogsArray.toString());
 								syncToServer();
 							}
 
