@@ -12,6 +12,9 @@ define('ALLOWED_ORIGIN', 'https://anjana-dodampe.github.io');
 
 $requestOrigin = $_SERVER['HTTP_ORIGIN'] ?? '';
 
+// TEMP DEBUG — remove after fix
+error_log('[saveTaps] Origin received: ' . var_export($requestOrigin, true));
+
 if ($requestOrigin === ALLOWED_ORIGIN) {
     header('Access-Control-Allow-Origin: ' . ALLOWED_ORIGIN);
     header('Access-Control-Allow-Methods: POST, OPTIONS');

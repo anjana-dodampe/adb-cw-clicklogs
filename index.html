@@ -96,20 +96,19 @@
 				        var responseText = this.responseText;
 				        //console.log("Response:"+responseText);
 
-				        if(responseText !== "Data saved successfully")
-				        	document.getElementById("container").innerHTML = '<span class="spanWhite">Server went away. Please try again.</span>';
+			        if(responseText.indexOf("Data saved successfully") === -1)
+			        	document.getElementById("container").innerHTML = '<span class="spanWhite">Server went away. Please try again.</span>';
 				    }
 				};
 				//var getLookups = "saveTaps.php?id="+uniqueIdentifier+"&var="+dependentVariable+"&taps=["+tapLogsArray+"]";
 				var url = "https://subpilose-unprompted-elin.ngrok-free.dev/clicklogs/saveTaps.php";
-				var params ="id="+uniqueIdentifier+"&var="+dependentVariable+"&taps=["+tapLogsArray+"]";
+			var params ="id="+uniqueIdentifier+"&var="+dependentVariable+"&taps=["+tapLogsArray+"]";
 				xmlhttp.open("POST",url,true);
 				xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+				xmlhttp.setRequestHeader('ngrok-skip-browser-warning', 'true');
 				xmlhttp.send(params);
 
-			}
-
-			function tapityTap(tep){
+			}			function tapityTap(tep){
 
 				//get handle to the tap area element
 				//var el = document.getElementById("tapHere");
